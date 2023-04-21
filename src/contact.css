@@ -4,6 +4,7 @@
 .main{
     width: 100%;
     display: flex;
+    margin-top: 5%;
 }
 .main img{
     height: 100vh;
