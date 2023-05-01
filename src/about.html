@@ -1,151 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="logoirt.PNG">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>About us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="logoirt.PNG">
+  <script src="https://kit.fontawesome.com/82db80bcdd.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>About us</title>
 </head>
 <style>
-    *{  font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;     
-    }
-    .logo{
-        background-color: rgba(2,86,119,255);
-    }
-    .nav{
-        margin-left: 450px;
-        margin-top: -60px;
-        overflow: hidden
-        ;
-    }
-    .nav a{
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        padding-inline: 14px 16px;
+  * {
 
-    }
-    .nav :hover{
-        color: black;
-        font-size: 25px;
-    }
-    .nav :active::after{
-        font-size: 30px;
-    }
-    .h2{
-        color:rgba(2,86,119,255);
-        margin-left: 120px;
-        margin-top: 55px;
-        font-size: 30px;
-    }
-
-    /*staff of irt modification*/
-
-
-    html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
+    margin: 0;
+    padding: 0;
   }
-}
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+  .logo {
+    background-color: rgba(2, 86, 119, 255);
+  }
 
-.container {
-  padding: 0 16px;
-}
+  .nav {
+    margin-left: 450px;
+    margin-top: -60px;
+    overflow: hidden;
+  }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-inline: 14px 16px;
 
-.title {
-  color: grey;
-}
+  }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color:rgba(2,86,119,255); ;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+  .nav :hover {
+    color: black;
+    font-size: 25px;
+  }
 
-.button:hover {
-  background-color: hsl(238, 92%, 70%);
-}
+  .nav :active::after {
+    font-size: 30px;
+  }
+
+  .h2 {
+
+    margin-left: 120px;
+    margin-top: 55px;
+    font-size: 30px;
+  }
+
+  /*staff of irt modification*/
+
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgba(2, 86, 119, 255);
+    ;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: hsl(238, 92%, 70%);
+  }
 </style>
-<body class="font-quicksand">
+
+<body class="font-quicksand h-fit">
 
 
-  <nav class="bg-gradient-to-r from-[#025677] to-trans-blue   fixed w-full z-20 top-0 left-0 border-b border-white">
+  <nav class="bg-gradient-to-r from-[#025677] to-trans-blue fixed w-screen z-20 top-0 left-0 border-b border-white">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center">
+      <a href="https://flowbite.com/" class="flex items-center">
         <img src="../assets/logoigrt.png" class="h-12 mr-3" alt="Flowbite Logo">
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IRT</span>
-    </a>
-    <div class="flex md:order-2">
-        <button type="button" class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get started</button>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+      </a>
+      <div class="flex md:order-2">
+        <button type="button"
+          class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
+          started</button>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
         </button>
-    </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="./about.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-        </li>
-        <li>
-          <a href="./contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-        </li>
-        <li>
-          <a href="./register.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
-        </li>
-      </ul>
-    </div>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="./about.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          </li>
+          <li>
+            <a href="./register.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-    
-    <div class="h2">
-        <h2><u>MEET IRT GENERAL STAFF</u></h2><br>
-        <h5 style="color: black;font-size:25px;">The following staff is high skilled and discplined to serve towards<br> the trainees and is responsible to accomplish your objective and goal through<br> your internership or your training;</h5>
-<br><br>
+
+
+  <div class="md:h-screen w-screen pt-32 bg-black-900 md:px-32  font-quicksand">
+    <div class=" font-bold flex items-center justify-center flex-col">
+      <h3 class="text-[#025677] text-2xl ">
+        Industry for Radical technology
+      </h3>
+      <h3>Future World Simulator</h3>
+    </div>
+
+    <div class="flex w-full md:flex-row flex-col">
+      <div class="w-full md:w-1/2 flex-col flex items-center mt-4">
+        <img src="../assets/coding.avif" alt="" class="h-64 drop-shadow w-64 rounded-full ">
+        <img src="../assets/networking.avif" alt="" class="h-64 md:ml-48 drop-shadow w-64 rounded-full ">
+      </div>
+      <div class="md:w-1/2md:p p-4 w-full pt-32">
+        <h3>
+          At Apptopia, we want to solve the biggest problem in mobile: everyone is guessing.
+
+
+
+          Publishers need to know what apps to build, how to monetize them, and where to price them. Advertisers and
+          brands need to identify their target users, and determine where to allocate resources in order to reach them
+          most effectively. Investors need to know which apps and genres are growing the quickest, and where users are
+          really spending their time (and money).
+
+
+
+          In business, we need data to make informed decisions. Apptopia provides the most actionable mobile app
+          insights in the industry. We aim to make this data available to as many people as possible.
+        </h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="h-fit">
+    <div class="w-screen text-center font-bold">MEET IRT <p class="text-[#025677]"> GENERAL STAFF</p>
+    </div><br>
+    <h5 class="text-lg text-center">The following staff is high skilled and discplined to serve towards<br> the
+      trainees and is responsible to accomplish your objective and goal through<br> your internership or your training;
+    </h5>
+    <br><br>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="flex md:flex-row flex-col md:px-32 flex-wrap gap-[2%] ">
+    <div class=" md:w-[30%] items-center ">
+      <img src="../assets/gt.jpeg" alt="ceo" style="width:100%" class="rounded-lg">
+      <div class="">
+        <h2 style="color: rgba(2,86,119,255);;" class="mt-4">USANASE Denis</h2>
+        <p class="title">CEO & Founder</p>
+        <div class="w-12 h-1 bg-gray-200 mb-8"> </div>
+        <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong> +250 788 635 252</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong> denis.mugisha@gmail.com</p><br>
+      </div>
+    </div>
+
+    <div class="md:w-[30%] items-center ">
+      <img src="../assets/gt.jpeg" alt="manager" style="width:100%" class="rounded-lg">
+      <div class="">
+        <h2 style="color: rgba(2,86,119,255);;" class="mt-4">GATETE Prosper</h2>
+        <p class="title">Deputy Ceo</p>
+        <div class="w-12 h-1 bg-gray-200 mb-8"> </div>
+        <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong> +250 787 226 910</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong> tafapro@gmail.com</p><br>
+      </div>
+    </div>
+
+
+
+    <div class="md:w-[30%] items-center ">
+      <img src="../assets/gt.jpeg" alt="ceo" style="width:100%" class="rounded-lg">
+      <div class="">
+        <h2 style="color: rgba(2,86,119,255);;" class="mt-4">Munyampeta Aimable</h2>
+        <p class="title">COO</p>
+        <div class="w-12 h-1 bg-gray-200 mb-8"> </div>
+        <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong>+250 781 136 794</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong>mpetaaimable@yahoo.fr</p><br>
+      </div>
+    </div>
+
+
+
+    <div class="md:w-[30%] items-center mt-12">
+      <img src="../assets/pk.jpeg" alt="ceo" style="width:100%" class="rounded-lg h-[60%]">
+      <div class="">
+        <h2 style="color: rgba(2,86,119,255);;" class="mt-4">Dusabe Francois</h2>
+        <p class="title">Marketing manager</p>
+        <div class="w-12 h-1 bg-gray-200 mb-8"> </div>
+        <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong> +250 785 213 211</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong>francoisdusabe@gmail.com</p><br>
+      </div>
+    </div>
+
+
+    <div class="md:w-[30%] items-center mt-12">
+      <img src="../assets/sis.jpg" alt="ceo" style="width:100%" class="rounded-lg h">
+      <div class="">
+        <h2 style="color: rgba(2,86,119,255);;" class="mt-4">UMUTONIWASE Yvette</h2>
+        <p class="title">Company Secretary & Data Entry</p>
+        <div class="w-12 h-1 bg-gray-200 mb-8"> </div>
+        <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong> +250 788 635 252</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong> yvetteumutesiwase@gmail.com</p><br>
+      </div>
+    </div>
+
+
+    <div class="md:w-[30%] items-center mt-12">
+      <img src="../assets/eric.jpg" alt="ceo" style="width:100%" class="rounded-lg h-[60%]">
+      <div class="">
+        <h2 style="color: rgba(2,86,119,255);;" class="mt-4">Ngaboyera Eric</h2>
+        <p class="title">CEO & Founder</p>
+        <div class="w-12 h-1 bg-gray-200 mb-8"> </div>
+        <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong> +250 788 675 194</p>
+        <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong> ericmignon94@gmail.com</p><br>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <br><br>
+    <br><br>
+
+
+    <div class="footer bg-trans-blue h-auto md:h-[40vh] w-screen  py-4">
+      <div class="logo w-full flex  justify-center items-center">
+        <img src="../assets/logoigrt.png" alt="" class="">
+      </div>
+
+      <div class="flex text-white md:flex-row flex-col md:gap-24 items-center justify-center">
+        <div>
+          <div class=" mb-4 ml-20 underline">Social Media</div>
+          <div class="flex gap-8">
+            <div class="">
+              <i class="fa-brands fa-instagram text-4xl"></i> <a>Instagram</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-twitter text-4xl"></i> <a>Twitter</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="my-4 ml-20 underline">Phone</div>
+          <div class="flex gap-4">
+            <div><i class="fa-solid fa-envelopes-bulk text-4xl"></i></div>
+            <div>
+              <p>+250 787226910</p>
+              <p>+250 736465387</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="my-4 ml-20 underline">Email</div>
+          <div class="flex gap-4">
+            <div><i class="fa-solid fa-phone text-4xl"></i></div>
+            <div>
+              <p>irs.inc@yahoo.com</p>
+              <p>irt.lted@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="my-4 ml-20 underline">Location</div>
+          <div class="flex gap-4">
+            <div> <i class="fa-regular fa-compass text-4xl"></i></div>
+            <div>
+              <p>Gasabo</p>
+              <p>Gisozi KG 14 AVE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
@@ -155,109 +374,6 @@
 
 
 
-
-
-
-
-
-    <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="../assets/gt.jpeg" alt="ceo" style="width:100%">
-            <div class="container">
-              <h2 style="color: rgba(2,86,119,255);;">USANASE Denis</h2><br>
-              <p class="title">CEO & Founder</p><br>
-              <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong>+250 788 635 252</p><br>
-              <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong>denis.mugisha@gmail.com</p><br>
-             
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="../assets/gt.jpeg" alt="manager" style="width:100%">
-            <div class="container">
-              <h2 style="color: rgba(2,86,119,255);;">GATETE Prosper</h2><br>
-              <p class="title">Deputy Ceo</p><br>
-              <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong>+250 787 226 910</p><br>
-              <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong>tafapro@gmail.com</p><br>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <img src="../assets/pk.jpeg" alt="John" style="width:100%">
-            <div class="container">
-              <h2 style="color: rgba(2,86,119,255);;">DUSABE Francois</h2><br>
-              <p class="title">Marketing Manager</p><br>
-              <p><i class="fa fa-phone"></i><strong>Tel:</strong>+250 785 213 211</p><br>
-              <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong>francoisdusabe@gmail.com</p><br>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-
-
-
-
-
-
-
-
-      <br><br><br<br>
-      
-
-
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="../assets/gt.jpeg" alt="ceo" style="width:100%">
-            <div class="container">
-              <h2 style="color: rgba(2,86,119,255);;">Munyampeta Aimable</h2><br>
-              <p class="title">C.O.O</p><br>
-              <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong>+250 781 136 794</p><br>
-              <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail:</strong>mpetaaimable@yahoo.fr</p><br>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="../assets/sis.jpg" alt="manager" style="width:100%;height: 20%;">
-            <div class="container">
-              <h2 style="color: rgba(2,86,119,255);;">UMUTONIWASE Yvette</h2><br>
-              <p class="title">Company Secretary & Data Entry</p><br>
-              <p><i class="fa fa-phone"></i><strong>Tel:</strong></p><br>
-              <p><i class="fa fa-envelope"></i><strong>E-mail:</strong>yvetteumutesiwase@gmail.com</p><br>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <img src="../assets/eric.jpg" alt="John" style="width:100%">
-            <div class="container">
-              <h2 style="color: rgba(2,86,119,255);;">Ngaboyera Eric</h2><br>
-              <p class="title">Head Of Trainings</p><br>
-              <p><i class="fa fa-phone"></i>&nbsp;<strong>Tel:</strong>+250 788 675 194</p><br>
-              <p><i class="fa fa-envelope"></i>&nbsp;<strong>E-mail</strong>ericmignon94@gmail.com</p><br>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-
-    
 </body>
+
 </html>
