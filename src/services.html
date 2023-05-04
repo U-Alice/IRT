@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/logoigrt.png" type="image/x-icon"> 
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     <title>Services</title>
     <style>
         /* Hide the scrollbar */
@@ -21,17 +23,15 @@
 
 <body class="w-full h-fit font-quicksand">
 
-    <nav class="bg-gradient-to-r from-[#025677] to-trans-blue  fixed w-full z-20 top-0 left-0 border-b border-white">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav class=" bg-white fixed w-full z-20 top-0 left-0 border-b border-white drop-shadow shadow-gray-100 shadow-sm">
+        <div class="max-w-screen-xl w-screen flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center">
                 <img src="../assets/logoigrt.png" class="h-12 mr-3" alt="Flowbite Logo">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IRT</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#025677] dark:text-white">IRT</span>
             </a>
             <div class="flex md:order-2">
-                <button type="button"
-                    class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
-                    started</button>
-                <button data-collapse-toggle="navbar-sticky" type="button"
+                
+                <button data-collapse-toggle="dropdownNavbar" type="button"
                     class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -42,22 +42,54 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </button>
+                <div id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="./home.html"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
+                        </li>
+                        <li>
+                            <a href="./services.html"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+                        </li>
+                        <li>
+                            <a href="./register.html"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Register</a>
+                        </li>
+                        <li>
+                            <button type="button"
+                    class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg bg-[#025677] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
+                    started</button>
+                        </li>
+                    </ul>
+                
+                </div>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
                     class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
                     <li>
                         <a href="./home.html"
-                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent  md:p-0"
-                            aria-current="page">Home</a>
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
                     </li>
+                  
                     <li>
                         <a href="./about.html"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Services</a>
                     </li>
                     <li>
                         <a href="./contact.html"
@@ -65,7 +97,12 @@
                     </li>
                     <li>
                         <a href="./register.html"
-                            class="block py-2 pl-3 pr-4 md:dark:text-blue-500 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
+                    </li>
+                    <li>
+                        <button type="button"
+                    class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none  focus:ring-blue-300 font-medium rounded-lg bg-[#025677] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
+                    started</button>
                     </li>
                 </ul>
             </div>
@@ -73,7 +110,8 @@
     </nav>
     <div class="h-[80vh] w-[100%] dark:bg-green relative flex flex-col gap-4 items-center justify-center rounded-b-xl">
         <h1 class="text-white text-4xl font-bold "> Industry for Radical technology</h1>
-        <h1 class="animate-text bg-gradient-to-r from-[#025677] via-white to-white bg-clip-text text-transparent text-2xl font-black">
+        <h1
+            class="animate-text bg-gradient-to-r from-[#025677] via-white to-[#025677] bg-clip-text text-transparent text-2xl font-black">
             We provide Fast Effetive and Flexible Services To Our Clients, Bringing Digital Solutions Closer
         </h1>
     </div>
@@ -83,8 +121,9 @@
             <i class="fa-solid fa-circle-arrow-left  text-3xl text-gray-500"></i>
         </div>
 
-        <div class="flex flex-col md:flex-row md:w-[90%] w-full bg-[#f7f6fb] h-full  overflow-x-auto scrollbar-hidden gap-6 mx-auto my-8">
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
+        <div
+            class="flex flex-col md:flex-row md:w-[90%] w-full bg-[#f7f6fb] h-full  overflow-x-auto scrollbar-hidden gap-6 mx-auto my-8">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3Ryb25pYyUyMGRldmljZXMlMjByZXBhaXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                     class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Repairing and maintance of electronic devices</h3>
@@ -101,9 +140,8 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
-                <img src="../assets/computerRepair.jpeg"
-                    class="w-full h-72 object-scale-down" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
+                <img src="../assets/computerRepair.jpeg" class="w-full h-72 object-scale-down" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Computer Repair and Maintanance</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -118,10 +156,11 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
-                <img src="../assets/cctv.jpeg"
-                    class="w-full h-72" alt="">
-                <h3 class="font-bold my-4 text-[#025677] object-scale-down">Installation of Security systems (CCTV Cameras  and Fire Alarm Systems Installation)</h3>
+            <div
+                class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
+                <img src="../assets/cctv.jpeg" class="w-full h-72" alt="">
+                <h3 class="font-bold my-4 text-[#025677] object-scale-down">Installation of Security systems(CCTV
+                    Cameras and Fire Alarm Systems)</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
                 <p> 3. Contact Hours: 9 hours / Week</p>
@@ -135,9 +174,8 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
-                <img src="../assets/programming1.jpeg"
-                    class="w-full h-72" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
+                <img src="../assets/programming1.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Basic Computer Skills</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -151,9 +189,9 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
-                <img src="../assets/networking.jpeg"
-                    class="w-full h-72" alt="">
+            <div
+                class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
+                <img src="../assets/networking.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Networking</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -168,9 +206,9 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
-                <img src="../assets/server.jpeg"
-                    class="w-full h-72" alt="">
+            <div
+                class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
+                <img src="../assets/server.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Server Administration</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -185,9 +223,9 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
-                <img src="../assets/cyber.jpeg"
-                    class="w-full h-72" alt="">
+            <div
+                class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
+                <img src="../assets/cyber.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Cyber Security Courses</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -202,9 +240,8 @@
                     Near ULK
                 </address>
             </div>
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
-                <img src="../assets/pcb.jpeg"
-                    class="w-full h-72" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
+                <img src="../assets/pcb.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">PCB Design and Printing</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -220,9 +257,9 @@
                 </address>
             </div>
 
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
-                <img src="../assets/database.jpg"
-                    class="w-full h-72" alt="">
+            <div
+                class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
+                <img src="../assets/database.jpg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Database Design and Development</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -238,9 +275,9 @@
             </div>
 
 
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
-                <img src="../assets/VR.jpeg"
-                    class="w-full h-72" alt="">
+            <div
+                class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4   p-4">
+                <img src="../assets/VR.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Virtual Reality for Training</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -255,9 +292,8 @@
                 </address>
             </div>
 
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
-                <img src="../assets/AI.jpeg"
-                    class="w-full h-72" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
+                <img src="../assets/AI.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Artificial Intelligence</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -272,9 +308,8 @@
                 </address>
             </div>
 
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4 p-4">
-                <img src="../assets/microcontroller.jpeg"
-                    class="w-full h-72" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4 p-4">
+                <img src="../assets/microcontroller.jpeg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">IOT & Micro-Controller</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -290,9 +325,8 @@
                 </address>
             </div>
 
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4 p-4">
-                <img src="../assets/cisco.jpg"
-                    class="w-full h-72" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4 p-4">
+                <img src="../assets/cisco.jpg" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Cisco Courses</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -308,9 +342,8 @@
                 </address>
             </div>
 
-            <div class="flex-none drop-shadow shadow-xl shadow-white rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
-                <img src="../assets/webdesign.png"
-                    class="w-full h-72" alt="">
+            <div class="flex-none drop-shadow shadow-sm shadow-gray-100 rounded-lg h-fit bg-white w-full md:w-1/4  p-4">
+                <img src="../assets/webdesign.png" class="w-full h-72" alt="">
                 <h3 class="font-bold my-4 text-[#025677] ">Web Design and Implementation</h3>
                 <p> 1. Registration Period: On Going</p>
                 <p> 2. Registration fees: 5,000 rwf</p>
@@ -342,69 +375,71 @@
         <div class="w-full h-fit  my-16">
             <div class="h-full w-full mx-auto flex md:flex-wrap md:flex-row flex-col gap-8 items-center justify-center">
 
-                <div class="rounded-xl py-16 flex gap-4 drop-shadow shadow-lg shadow-gray-100 h-1/2 md:w-1/4 w-3/4 reveal">
+                <div
+                    class="rounded-xl py-16 flex gap-4 drop-shadow shadow-lg shadow-gray-100 h-1/2 md:w-1/4 w-3/4 reveal">
                     <div class="bg-[#025677] h-12 w-1/6 rounded-r-lg flex items-center justify-center">
                         <i class="fa-solid fa-circle-arrow-right text-white mx-auto my-auto"></i>
                     </div>
                     <div class="flex flex-col w-3/4 gap-4">
                         <h3 class="font-bold text-2xl">Education</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, suscipit hic possimus magnam natus dolores laborum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, suscipit hic
+                            possimus magnam natus dolores laborum.</p>
                     </div>
                 </div>
-                <div class="rounded-xl py-16 flex gap-4 drop-shadow shadow-lg shadow-gray-100 h-1/2 md:w-1/4 w-3/4 reveal">
+                <div
+                    class="rounded-xl py-16 flex gap-4 drop-shadow shadow-lg shadow-gray-100 h-1/2 md:w-1/4 w-3/4 reveal">
                     <div class="bg-[#025677] h-12 w-1/6 rounded-r-lg flex items-center justify-center">
                         <i class="fa-solid fa-circle-arrow-right text-white mx-auto my-auto"></i>
                     </div>
                     <div class="flex flex-col w-3/4 gap-4">
                         <h3 class="font-bold text-2xl">Education</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, suscipit hic possimus magnam natus dolores laborum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, suscipit hic
+                            possimus magnam natus dolores laborum.</p>
                     </div>
                 </div>
-                <div class="rounded-xl py-16 flex gap-4 drop-shadow shadow-lg shadow-gray-100 h-1/2 md:w-1/4 w-3/4 reveal">
+                <div
+                    class="rounded-xl py-16 flex gap-4 drop-shadow shadow-lg shadow-gray-100 h-1/2 md:w-1/4 w-3/4 reveal">
                     <div class="bg-[#025677] h-12 w-1/6 rounded-r-lg flex items-center justify-center">
                         <i class="fa-solid fa-circle-arrow-right text-white mx-auto my-auto"></i>
                     </div>
                     <div class="flex flex-col w-3/4 gap-4">
                         <h3 class="font-bold text-2xl">Education</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, suscipit hic possimus magnam natus dolores laborum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, suscipit hic
+                            possimus magnam natus dolores laborum.</p>
                     </div>
                 </div>
-
-
-
-
             </div>
 
         </div>
     </div>
-<script>
+    <script>
 
-    function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-            
-            if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("animate-fade-in-down");
-            } else {
-                reveals[i].classList.remove("animate-fade-in-down");
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animate-fade-in-down");
+                } else {
+                    reveals[i].classList.remove("animate-fade-in-down");
+                }
             }
         }
-    }
-    console.log("scrolling")
-      
-    window.addEventListener("scroll", reveal);
+        console.log("scrolling")
+
+        window.addEventListener("scroll", reveal);
     </script>
 </body>
-<footer class="footer bg-trans-blue h-[40vh] mt-12 w-full  py-4">
-    <div class=" w-full flex justify-center items-center">
+<div class="footer bg-trans-blue h-auto md:h-[40vh] w-full  py-4">
+    <div class="logo w-full flex  justify-center items-center">
         <img src="../assets/logoigrt.png" alt="" class="">
     </div>
 
-    <div class="flex text-white gap-24 items-center justify-center">
+    <div class="flex text-white md:flex-row flex-col md:gap-24 items-center justify-center">
         <div>
             <div class=" mb-4 ml-20 underline">Social Media</div>
             <div class="flex gap-8">
@@ -450,4 +485,4 @@
         </div>
     </div>
 
-</footer>
+</div>

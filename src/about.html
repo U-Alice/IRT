@@ -10,6 +10,8 @@
   <script src="https://kit.fontawesome.com/82db80bcdd.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="/dist/output.css" rel="stylesheet">
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <link rel="shortcut icon" href="../assets/logoigrt.png" type="image/x-icon"> 
   <title>About us</title>
 </head>
 <style>
@@ -119,57 +121,92 @@
 
 <body class="font-quicksand h-fit">
 
-
-  <nav class="bg-gradient-to-r from-[#025677] to-trans-blue fixed w-screen z-20 top-0 left-0 border-b border-white">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center">
-        <img src="../assets/logoigrt.png" class="h-12 mr-3" alt="Flowbite Logo">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">IRT</span>
-      </a>
-      <div class="flex md:order-2">
-        <button type="button"
-          class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
-          started</button>
-        <button data-collapse-toggle="navbar-sticky" type="button"
-          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
-          <li>
-            <a href="./home.html"
-              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="./about.html"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-          </li>
-          <li>
-            <a href="./contact.html"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-          </li>
-          <li>
-            <a href="./register.html"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
-          </li>
-        </ul>
-      </div>
+  <nav class=" bg-white fixed w-full z-20 top-0 left-0 border-b border-white drop-shadow shadow-gray-100 shadow-sm">
+    <div class="max-w-screen-xl w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center">
+            <img src="../assets/logoigrt.png" class="h-12 mr-3" alt="Flowbite Logo">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#025677] dark:text-white">IRT</span>
+        </a>
+        <div class="flex md:order-2">
+            
+            <button data-collapse-toggle="dropdownNavbar" type="button"
+                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                        <a href="./home.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
+                    </li>
+                    <li>
+                        <a href="./services.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Services</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./register.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Register</a>
+                    </li>
+                    <li>
+                        <button type="button"
+                class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg bg-[#025677] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
+                started</button>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  ">
+                <li>
+                    <a href="./home.html"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                        aria-current="page">About</a>
+                </li>
+                <li>
+                    <a href="./services.html"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                </li>
+                <li>
+                    <a href="./contact.html"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+                <li>
+                    <a href="./register.html"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
+                </li>
+                <li>
+                    <button type="button"
+                class="text-white  hover:bg-blue-100 focus:ring-4 focus:outline-none  focus:ring-blue-300 font-medium rounded-lg bg-[#025677] text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-green dark:hover:bg-blue-500 dark:focus:ring-blue-600">Get
+                started</button>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
+<body class="w-full h-fit">
+
 
 
   <div class="md:h-screen w-full pt-32 bg-black-900 md:px-32  font-quicksand">
@@ -220,15 +257,8 @@
 
 
 
-
-
-
-
-
-
-
-  <div class="flex md:flex-row flex-col md:px-32 flex-wrap gap-[2%] ">
-    <div class=" md:w-[30%] items-center ">
+  <div class="flex md:flex-row flex-col md:px-32 h-fit flex-wrap gap-[2%] ">
+    <div class=" md:w-[30%] items-center reveal h-fit">
       <img src="../assets/gt.jpeg" alt="ceo" style="width:100%" class="rounded-lg">
       <div class="">
         <h2 style="color: rgba(2,86,119,255);;" class="mt-4">USANASE Denis</h2>
@@ -239,7 +269,7 @@
       </div>
     </div>
 
-    <div class="md:w-[30%] items-center ">
+    <div class="md:w-[30%] items-center reveal">
       <img src="../assets/gt.jpeg" alt="manager" style="width:100%" class="rounded-lg">
       <div class="">
         <h2 style="color: rgba(2,86,119,255);;" class="mt-4">GATETE Prosper</h2>
@@ -252,7 +282,7 @@
 
 
 
-    <div class="md:w-[30%] items-center ">
+    <div class="md:w-[30%] items-center reveal">
       <img src="../assets/gt.jpeg" alt="ceo" style="width:100%" class="rounded-lg">
       <div class="">
         <h2 style="color: rgba(2,86,119,255);;" class="mt-4">Munyampeta Aimable</h2>
@@ -265,7 +295,7 @@
 
 
 
-    <div class="md:w-[30%] items-center mt-12">
+    <div class="md:w-[30%] items-center mt-12 reveal">
       <img src="../assets/pk.jpeg" alt="ceo" style="width:100%" class="rounded-lg h-[60%]">
       <div class="">
         <h2 style="color: rgba(2,86,119,255);;" class="mt-4">Dusabe Francois</h2>
@@ -277,7 +307,7 @@
     </div>
 
 
-    <div class="md:w-[30%] items-center mt-12">
+    <div class="md:w-[30%] items-center mt-12 reveal">
       <img src="../assets/sis.jpg" alt="ceo" style="width:100%" class="rounded-lg h">
       <div class="">
         <h2 style="color: rgba(2,86,119,255);;" class="mt-4">UMUTONIWASE Yvette</h2>
@@ -289,7 +319,7 @@
     </div>
 
 
-    <div class="md:w-[30%] items-center mt-12">
+    <div class="md:w-[30%] items-center mt-12 reveal">
       <img src="../assets/eric.jpg" alt="ceo" style="width:100%" class="rounded-lg h-[60%]">
       <div class="">
         <h2 style="color: rgba(2,86,119,255);;" class="mt-4">Ngaboyera Eric</h2>
@@ -300,77 +330,88 @@
       </div>
     </div>
 
+  </div>
+</body>
+  <div class="footer bg-trans-blue h-fit md:h-[40vh] w-full  py-4">
+    <div class=" w-full flex  justify-center items-center">
+        <img src="../assets/logoigrt.png" alt="" class="">
+    </div>
+
+    <div class="flex text-white md:flex-row flex-col md:gap-24 items-center justify-center">
+        <div>
+            <div class=" mb-4 ml-20 underline">Social Media</div>
+            <div class="flex gap-8">
+                <div class="">
+                    <i class="fa-brands fa-instagram text-4xl"></i> <a>Instagram</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter text-4xl"></i> <a>Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="my-4 ml-20 underline">Phone</div>
+            <div class="flex gap-4">
+                <div><i class="fa-solid fa-envelopes-bulk text-4xl"></i></div>
+                <div>
+                    <p>+250 787226910</p>
+                    <p>+250 736465387</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="my-4 ml-20 underline">Email</div>
+            <div class="flex gap-4">
+                <div><i class="fa-solid fa-phone text-4xl"></i></div>
+                <div>
+                    <p>irs.inc@yahoo.com</p>
+                    <p>irt.lted@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="my-4 ml-20 underline">Location</div>
+            <div class="flex gap-4">
+                <div> <i class="fa-regular fa-compass text-4xl"></i></div>
+                <div>
+                    <p>Gasabo</p>
+                    <p>Gisozi KG 14 AVE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
+  </div>
 
 
 
 
+  <script>
 
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
 
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
 
-    <br><br>
-    <br><br>
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("animate-fade-in-down");
+        } else {
+          reveals[i].classList.remove("animate-fade-in-down");
+        }
+      }
+    }
+    console.log("scrolling")
 
-
-    <div class="footer bg-trans-blue h-auto md:h-[40vh] w-full mt-4 py-4">
-      <div class="logo w-full flex  justify-center items-center">
-        <img src="../assets/logoigrt.png" alt="" class="">
-      </div>
-
-      <div class="flex text-white md:flex-row flex-col md:gap-24 items-center justify-center">
-        <div>
-          <div class=" mb-4 ml-20 underline">Social Media</div>
-          <div class="flex gap-8">
-            <div class="">
-              <i class="fa-brands fa-instagram text-4xl"></i> <a>Instagram</a>
-            </div>
-            <div>
-              <i class="fa-brands fa-twitter text-4xl"></i> <a>Twitter</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="my-4 ml-20 underline">Phone</div>
-          <div class="flex gap-4">
-            <div><i class="fa-solid fa-envelopes-bulk text-4xl"></i></div>
-            <div>
-              <p>+250 787226910</p>
-              <p>+250 736465387</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="my-4 ml-20 underline">Email</div>
-          <div class="flex gap-4">
-            <div><i class="fa-solid fa-phone text-4xl"></i></div>
-            <div>
-              <p>irs.inc@yahoo.com</p>
-              <p>irt.lted@gmail.com</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="my-4 ml-20 underline">Location</div>
-          <div class="flex gap-4">
-            <div> <i class="fa-regular fa-compass text-4xl"></i></div>
-            <div>
-              <p>Gasabo</p>
-              <p>Gisozi KG 14 AVE</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-
+    window.addEventListener("scroll", reveal);
+  </script>
 
 
 
