@@ -3,7 +3,7 @@
     "tailwindcss": "^3.3.1"
   },
   "scripts": {
-    "build": "postcss src/input.css -o /dist/output.css"
+    "build": "npm install && postcss src/input.css -o /dist/output.css"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
