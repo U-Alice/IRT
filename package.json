@@ -3,11 +3,12 @@
     "tailwindcss": "^3.3.1"
   },
   "scripts": {
-    "build": "npm install && postcss src/input.css -o /dist/output.css"
+    "build": "node_modules/.bin/postcss src/styles.css -o dist/styles.css"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "flowbite": "^1.6.5",
-    "postcss": "^8.4.21"
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0"
   }
 }
